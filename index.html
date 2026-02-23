@@ -41,6 +41,27 @@
         .btn:hover {
             background-color: #45a049;
         }
+
+        #spinner {
+            width: 25%;
+            height: auto;
+            cursor: pointer;
+            margin: 5% 0 10%;
+        }
+
+        #spinner:hover {
+            animation: giragiraestrelinha 2s linear infinite alternate;
+        }
+
+        @keyframes giragiraestrelinha {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(3600deg);
+            }
+        }
     </style>
 </head>
 <body>
@@ -65,6 +86,8 @@
     </section>
 
     <button class="btn">Clique aqui para aprender mais!</button>
+
+    <img id="spinner" src="spinner.jpg">
 </main>
 
 <footer>

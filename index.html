@@ -41,6 +41,27 @@
         .btn:hover {
             background-color: #45a049;
         }
+
+        #spinner {
+            width: 25%;
+            height: auto;
+            cursor: pointer;
+            margin: 5% 0 10%;
+        }
+
+        #spinner:hover {
+            animation: giragiraestrelinha 2s linear infinite alternate;
+        }
+
+        @keyframes giragiraestrelinha {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(3600deg);
+            }
+        }
     </style>
 </head>
 <body>
@@ -68,6 +89,8 @@
     <br><br>
     <h1>NETEFLECS:</h1>
     <button style="background-color: yellow;"><a href="Netflix-Clone/index.html">BOTÃO SUPER SECRETO QUE LEVA PARA UM CLONE DO SITE DA NETFLIX SUPER IRADO</a></button>
+
+    <img id="spinner" src="spinner.jpg">
 </main>
 
 <footer>

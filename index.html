@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +12,20 @@
             margin: 0;
             padding: 0;
         }
+
         header {
             background-color: #4CAF50;
             color: white;
             padding: 15px;
             text-align: center;
         }
+
         main {
             padding: 20px;
         }
+
         footer {
-            background-color: #333;
+            border-color: #333;
             color: white;
             text-align: center;
             padding: 10px;
@@ -29,6 +33,7 @@
             bottom: 0;
             width: 100%;
         }
+
         .btn {
             background-color: #4CAF50;
             color: white;
@@ -38,10 +43,51 @@
             text-align: center;
             display: inline-block;
         }
+
         .btn:hover {
             background-color: #45a049;
         }
 
+        .fotos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        img {
+            max-width: 150px;
+            border: rgb(255, 0, 238) 5px solid;
+            border-radius: 40px;
+            animation: rainbow-background 10s infinite 1ms;
+        }
+
+        @keyframes rainbow-background {
+            0% {
+                border-color: rgb(255, 64, 64);
+            }
+
+            16% {
+                border-color: rgb(255, 182, 46);
+            }
+
+            33% {
+                border-color: rgb(255, 255, 66);
+            }
+
+            50% {
+                border-color: rgb(107, 216, 107);
+            }
+
+            66% {
+                border-color: rgb(89, 89, 226);
+            }
+
+            83% {
+                border-color: rgb(155, 80, 209);
+            }
+
+            100% {
+                border-color: rgb(255, 144, 255);
         #spinner {
             width: 25%;
             height: auto;
@@ -64,27 +110,40 @@
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Bem-vindo ao Projeto de Pull Request</h1>
-</header>
+    <header>
+        <h1>Bem-vindo ao Projeto de Pull Request</h1>
+    </header>
 
-<main>
-    <section>
-        <h2>Sobre o Projeto</h2>
-        <p>Este projeto tem como objetivo ensinar o fluxo de trabalho do GitHub, incluindo a criação de branches, commits, Pull Requests e revisões de código.</p>
-    </section>
+    <main>
+        <section>
+            <h2>Sobre o Projeto</h2>
+            <p>Este projeto tem como objetivo ensinar o fluxo de trabalho do GitHub, incluindo a criação de branches,
+                commits, Pull Requests e revisões de código.</p>
+        </section>
 
-    <section>
-        <h2>Funcionalidades</h2>
-        <ul>
-            <li>Visualização de páginas HTML simples.</li>
-            <li>Interação com formulários.</li>
-            <li>Design simples e responsivo.</li>
-        </ul>
-    </section>
+        <section>
+            <h2>Funcionalidades</h2>
+            <ul>
+                <li>Visualização de páginas HTML simples.</li>
+                <li>Interação com formulários.</li>
+                <li>Design simples e responsivo.</li>
+                <li>Mostrar as fotos mais lindas da natureza</li>
+                <li>⚠️ ALERTA DE RESENHA! ⚠️👀👀👀👀👀</li>
+            </ul>
+            <div class="fotos">
+                <img src="Assets/pexels-simon73-1183099.jpg" alt="">
+                <img src="Assets/pexels-eberhardgross-443446.jpg" alt="">
+                <img src="Assets/pexels-bella-white-201200-635279.jpg" alt="">
+                <img src="Assets/einsteintelsa.jpg" alt="">
+            </div>
+        </section>
 
+        <button class="btn"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Clique aqui para aprender
+                mais!</a></button>
+    </main>
     <button class="btn">Clique aqui para aprender mais!</button>
     <br><br>
     <h1>NETEFLECS:</h1>
@@ -93,9 +152,10 @@
     <img id="spinner" src="spinner.jpg">
 </main>
 
-<footer>
-    <p>&copy; 2025 Projeto GitHub PR - Todos os direitos reservados.</p>
-</footer>
+    <footer>
+        <p>&copy; 2025 Projeto GitHub PR - Todos os direitos reservados.</p>
+    </footer>
 
 </body>
+
 </html>
